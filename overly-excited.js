@@ -14,7 +14,7 @@ function addExcitement (theWordArray, punctuation, howManyTimes) {
     for (let i = 0; i < theWordArray.length; i++) {
         // Concatenate the new word onto buildMeUp
         
-        if (i % 3 === 0 && i != 0){
+        if ((i+1 % 3 === 0 && i !== 0){
             buildMeUp =`${buildMeUp} ${theWordArray[i]} ${punctuation.repeat(howManyTimes)}`
         }
         else{
